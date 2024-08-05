@@ -1,3 +1,6 @@
+# NOTE: 
+      >Project is commited into master branch.
+
 # Overview
 This project is an Employee Management System built using Spring Boot, Spring Data JPA, and Spring MVC on the backend, with HTML, CSS, and Thymeleaf for the frontend. The system allows for the management of employee information through a web interface, performing all CRUD (Create, Read, Update, Delete) operations.
 
