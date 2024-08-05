@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exception Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8d7da;
+            color: #721c24;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: #f1f1f1;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+            text-align: center;
+            max-width: 400px;
+            width: 80%;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        .exception-detail {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .exception-detail span {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Exception Details</h1>
+    <div class="exception-detail">
+        <span>HTTP Status:</span>
+        <p th:text="${exceptions.httpStatus}"></p>
+    </div>
+    <div class="exception-detail">
+        <span>Message:</span>
+        <p th:text="${exceptions.message}"></p>
+    </div>
+    <div class="exception-detail">
+        <span>Timestamp:</span>
+        <p th:text="${exceptions.timestamp}"></p>
+    </div>
+</div>
+</body>
+</html>
